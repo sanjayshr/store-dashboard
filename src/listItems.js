@@ -9,62 +9,57 @@ import PeopleIcon from '@material-ui/icons/People';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import { Link } from 'react-router-dom';
 
 export const mainListItems = (
   <div>
-    <ListItem button>
+    <ListItem button component={Link} to='/'>
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <ListItemText primary='Dashboard' />
+      <ListItemText primary='Stores' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <ShoppingCartIcon />
       </ListItemIcon>
-      <ListItemText primary='Orders' />
+      <ListItemText primary='Stores With Cafes' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
-      <ListItemText primary='Customers' />
+      <ListItemText primary='Stores With Child' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
-      <ListItemText primary='Reports' />
+      <ListItemText primary='Products' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
-      <ListItemText primary='Integrations' />
+      <ListItemText primary='Ad Campaign' />
     </ListItem>
-  </div>
-);
-
-export const secondaryListItems = (
-  <div>
-    <ListSubheader inset>Saved reports</ListSubheader>
-    <ListItem button>
+    <ListItem button component={Link} to='/holidays'>
       <ListItemIcon>
-        <AssignmentIcon />
+        <LayersIcon />
       </ListItemIcon>
-      <ListItemText primary='Current month' />
+      <ListItemText primary='List of Holidays' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <LayersIcon />
       </ListItemIcon>
-      <ListItemText primary='Last quarter' />
+      <ListItemText primary='Cities' />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <LayersIcon />
       </ListItemIcon>
-      <ListItemText primary='Year-end sale' />
+      <ListItemText primary='View Reports' />
     </ListItem>
   </div>
 );
